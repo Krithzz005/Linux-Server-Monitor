@@ -1,0 +1,59 @@
+kri@Sunshine:~$ cat health_report_20260717_200506.txt
+=======================================
+      LINUX SERVER HEALTH REPORT
+=======================================
+
+Generated On : Fri Jul 17 20:05:06 IST 2026
+Hostname     : Sunshine
+User         : kri
+
+--------------- CPU ----------------
+%Cpu(s):  0.5 us,  0.0 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+
+------------- MEMORY ---------------
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       341Mi       6.8Gi       3.0Mi       445Mi       7.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+-------------- DISK ----------------
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.8G     0  3.8G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            3.8G  4.0K  3.8G   1% /mnt/wsl
+drivers         495G  362G  133G  74% /usr/lib/wsl/drivers
+/dev/sdd       1007G  3.2G  953G   1% /
+none            3.8G   76K  3.8G   1% /mnt/wslg
+none            3.8G     0  3.8G   0% /usr/lib/wsl/lib
+rootfs          3.8G  2.7M  3.8G   1% /init
+none            3.8G  528K  3.8G   1% /run
+none            3.8G     0  3.8G   0% /run/lock
+none            3.8G     0  3.8G   0% /run/shm
+none            3.8G   76K  3.8G   1% /mnt/wslg/versions.txt
+none            3.8G   76K  3.8G   1% /mnt/wslg/doc
+C:\             495G  362G  133G  74% /mnt/c
+D:\             214G   99G  115G  47% /mnt/d
+tmpfs           777M  8.0K  777M   1% /run/user/1000
+
+------------- NETWORK --------------
+172.30.220.39
+
+---------- LOGGED USERS ------------
+kri      pts/1        2026-07-17 19:58
+
+--------- TOP CPU PROCESS ----------
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.3  0.1 165848 10588 ?        Ss   19:58   0:01 /sbin/init
+root         918  0.2  0.0  14696  6784 ?        Ss   20:04   0:00 /lib/systemd/systemd-hostnamed
+root           2  0.0  0.0   3120  2048 ?        Sl   19:58   0:00 /init
+root           7  0.0  0.0   3136  1888 ?        Sl   19:58   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          67  0.0  0.1  64200 14092 ?        S<s  19:58   0:00 /lib/systemd/systemd-journald
+
+------- TOP MEMORY PROCESS ---------
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         239  0.0  0.2 107164 21236 ?        Ssl  19:58   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         202  0.0  0.2  30096 19072 ?        Ss   19:58   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root          67  0.0  0.1  64200 14092 ?        S<s  19:58   0:00 /lib/systemd/systemd-journald
+systemd+     156  0.0  0.1  26204 13660 ?        Ss   19:58   0:00 /lib/systemd/systemd-resolved
+root           1  0.3  0.1 165848 10588 ?        Ss   19:58   0:01 /sbin/init
+
+------------- UPTIME ---------------
+ 20:05:06 up 6 min,  1 user,  load average: 0.08, 0.04, 0.01
